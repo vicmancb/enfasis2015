@@ -1,0 +1,8 @@
+<input type="text" ng-model="prueba"/>
+<div>{{prueba}}</div>
+<hr/>
+<div ng-repeat="user in users | filter:prueba">
+    {{user.name}}, {{user.age}}
+</div>
+
+este template fue cargado desde prueba

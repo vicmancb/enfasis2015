@@ -3,15 +3,25 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>Angular App</title>
+    <base href="/repo/">
 </head>
-<body ng-controller="myController">
-    <input type="text" ng-model="prueba"/>
-    <div>{{prueba}}</div>
-    <hr/>
-    <div ng-repeat="user in users | filter:prueba">
-        {{user.name}}, {{user.age}}
-    </div>
-<script type="application/javascript" src="lib/angular.js"></script>
-<script type="application/javascript" src="script/app.js"></script>
+<body>
+    <div ui-view></div>
+
+
+
+    <!--dependencias-->
+    <script type="application/javascript" src="bower_components/angular/angular.js"></script>
+    <script type="application/javascript" src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+
+    <!--mi codigo-->
+    <script type="application/javascript" src="script/app.js"></script>
+    <script type="application/javascript" src="script/home/home.controller.js"></script>
+    <script type="application/javascript" src="script/home/home.service.js"></script>
+    <script type="application/javascript" src="script/home/home.js"></script>
+
+    <script type="application/javascript" src="script/prueba/prueba.controller.js"></script>
+    <script type="application/javascript" src="script/prueba/prueba.service.js"></script>
+    <script type="application/javascript" src="script/prueba/prueba.js"></script>
 </body>
 </html>
