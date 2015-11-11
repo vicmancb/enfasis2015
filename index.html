@@ -4,15 +4,23 @@
     <meta charset="UTF-8">
     <title>Angular App</title>
     <base href="/repo/">
+
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="script/styles/general.css"/>
+    <link rel="stylesheet" href="script/directive/country/country.css"/>
 </head>
 <body>
-    <div ui-view></div>
+    <div class="container">
+        <div ui-view></div>
+    </div>
 
 
 
     <!--dependencias-->
     <script type="application/javascript" src="bower_components/angular/angular.js"></script>
     <script type="application/javascript" src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script type="application/javascript" src="bower_components/angular-translate/angular-translate.js"></script>
+
 
     <!--mi codigo-->
     <script type="application/javascript" src="script/app.js"></script>
@@ -23,5 +31,10 @@
     <script type="application/javascript" src="script/prueba/prueba.controller.js"></script>
     <script type="application/javascript" src="script/prueba/prueba.service.js"></script>
     <script type="application/javascript" src="script/prueba/prueba.js"></script>
+
+    <script type="application/javascript" src="script/directive/country/country.js"></script>
+    <script type="application/javascript" src="script/filter/ordinal.js"></script>
+
+
 </body>
 </html>

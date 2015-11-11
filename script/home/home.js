@@ -8,6 +8,7 @@ angular.module('myApp')
             .state('home', {
                 url: '/',
                 templateUrl: 'script/home/home.html',
-                controller: 'homeController'
+                controller: 'homeController',
+                controllerAs: 'homeController'
             })
     });

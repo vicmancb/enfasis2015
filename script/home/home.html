@@ -1,8 +1,26 @@
+<div>{{'NOEXUSTE' | translate}}</div>
+<a ng-click="homeController.changeLanguage('es')" href="">cambiar idioma</a>
 <input type="text" ng-model="prueba"/>
 <div>{{prueba}}</div>
+<div>{{1 | ordinal}}</div>
+<div>{{3 | ordinal}}</div>
+<div>{{4 | ordinal}}</div>
+<div>{{'emir' | ordinal}}</div>
+<div>{{0 | ordinal}}</div>
 <hr/>
-<div ng-repeat="user in users | filter:prueba">
-    {{user.name}}, {{user.age}}
+<div class="row">
+    <country class="col-md-4" name = "user.name" ng-repeat="user in homeController.countries | filter:prueba"/>
 </div>
+
+
+
+<hr/>
+
+<!--aqui es donde voy a usar la directiva-->
+<!--<div class="row">-->
+    <!--<country class="col-md-4" name = "homeController.countryName"/>-->
+    <!--<country class="col-md-4" name = "homeController.countryName"/>-->
+<!--</div>-->
+
 
 <a ui-sref="prueba" href="">State 1</a>
